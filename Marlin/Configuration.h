@@ -389,9 +389,9 @@
   #define  DEFAULT_Kd 4.03
 
   // FlyingBear GHOST (AlexGyver)
-  #define  DEFAULT_Kp 15.74
-  #define  DEFAULT_Ki 1.12
-  #define  DEFAULT_Kd 55.11
+  // #define  DEFAULT_Kp 15.74
+  // #define  DEFAULT_Ki 1.12
+  // #define  DEFAULT_Kd 55.11
 
   // P905
   // #define  DEFAULT_Kp 15.35
