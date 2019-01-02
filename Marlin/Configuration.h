@@ -384,9 +384,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // FlyingBear GHOST (AndrewBiz after autotune)
-  #define  DEFAULT_Kp 3.18
-  #define  DEFAULT_Ki 0.63
-  #define  DEFAULT_Kd 4.03
+  #define  DEFAULT_Kp 10.07
+  #define  DEFAULT_Ki 1.92
+  #define  DEFAULT_Kd 13.20
 
   // FlyingBear GHOST (AlexGyver)
   // #define  DEFAULT_Kp 15.74
