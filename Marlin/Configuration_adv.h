@@ -91,7 +91,7 @@
    * below 2.
    */
   #define WATCH_TEMP_PERIOD 60                // Seconds
-  #define WATCH_TEMP_INCREASE 1               // Degrees Celsius
+  #define WATCH_TEMP_INCREASE 3               // Degrees Celsius
 #endif
 
 /**
