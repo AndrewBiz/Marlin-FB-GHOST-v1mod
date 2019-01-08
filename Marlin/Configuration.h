@@ -344,12 +344,12 @@
 // The minimal temperature defines the temperature below which the heater will not be enabled It is used
 // to check that the wiring to the thermistor is not broken.
 // Otherwise this would lead to the heater being powered on all the time.
-#define HEATER_0_MINTEMP 5
-#define HEATER_1_MINTEMP 5
+#define HEATER_0_MINTEMP -20
+#define HEATER_1_MINTEMP -20
 #define HEATER_2_MINTEMP 5
 #define HEATER_3_MINTEMP 5
 #define HEATER_4_MINTEMP 5
-#define BED_MINTEMP 5
+#define BED_MINTEMP -20
 
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
@@ -368,11 +368,11 @@
 
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
-#define BANG_MAX 200     // Limits current to nozzle while in bang-bang mode; 255=full current
+#define BANG_MAX 255     // Limits current to nozzle while in bang-bang mode; 255=full current
 #define PID_MAX BANG_MAX // Limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
 #define PID_K1 0.95      // Smoothing factor within any PID loop
 #if ENABLED(PIDTEMP)
-  #define PID_AUTOTUNE_MENU // Add PID Autotune to the LCD "Temperature" menu to run M303 and apply the result.
+  //#define PID_AUTOTUNE_MENU // Add PID Autotune to the LCD "Temperature" menu to run M303 and apply the result.
   //#define PID_DEBUG // Sends debug data to the serial port.
   //#define PID_OPENLOOP 1 // Puts PID in open loop. M104/M140 sets the output power from 0 to PID_MAX
   //#define SLOW_PWM_HEATERS // PWM with very low frequency (roughly 0.125Hz=8s) and minimum state time of approximately 1s useful for heaters driven by a relay
@@ -389,14 +389,14 @@
   // #define  DEFAULT_Kd 3.25
 
   // FlyingBear GHOST (AlexGyver)
-  #define  DEFAULT_Kp 15.74
-  #define  DEFAULT_Ki 1.12
-  #define  DEFAULT_Kd 55.11
+  // #define  DEFAULT_Kp 15.74
+  // #define  DEFAULT_Ki 1.12
+  // #define  DEFAULT_Kd 55.11
 
-  // P905
-  // #define  DEFAULT_Kp 15.35
-  // #define  DEFAULT_Ki 1.16
-  // #define  DEFAULT_Kd 150.60
+  // FB GHOST stock values: 
+  #define  DEFAULT_Kp 15.35
+  #define  DEFAULT_Ki 1.16
+  #define  DEFAULT_Kd 150.60
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
