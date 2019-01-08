@@ -368,7 +368,7 @@
 
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
-#define BANG_MAX 255     // Limits current to nozzle while in bang-bang mode; 255=full current
+#define BANG_MAX 200     // Limits current to nozzle while in bang-bang mode; 255=full current
 #define PID_MAX BANG_MAX // Limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
 #define PID_K1 0.95      // Smoothing factor within any PID loop
 #if ENABLED(PIDTEMP)
@@ -384,14 +384,14 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // FlyingBear GHOST (AndrewBiz after autotune)
-  #define  DEFAULT_Kp 10.07
-  #define  DEFAULT_Ki 1.92
-  #define  DEFAULT_Kd 13.20
+  // #define  DEFAULT_Kp 2.56 
+  // #define  DEFAULT_Ki 0.50
+  // #define  DEFAULT_Kd 3.25
 
   // FlyingBear GHOST (AlexGyver)
-  // #define  DEFAULT_Kp 15.74
-  // #define  DEFAULT_Ki 1.12
-  // #define  DEFAULT_Kd 55.11
+  #define  DEFAULT_Kp 15.74
+  #define  DEFAULT_Ki 1.12
+  #define  DEFAULT_Kd 55.11
 
   // P905
   // #define  DEFAULT_Kp 15.35
