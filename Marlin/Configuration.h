@@ -384,9 +384,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // FlyingBear GHOST (AndrewBiz after autotune)
-  // #define  DEFAULT_Kp 11.94 
-  // #define  DEFAULT_Ki 2.28
-  // #define  DEFAULT_Kd 15.65
+  #define  DEFAULT_Kp 35.02 
+  #define  DEFAULT_Ki 4.00
+  #define  DEFAULT_Kd 76.73
 
   // FlyingBear GHOST (AlexGyver)
   // #define  DEFAULT_Kp 15.74
@@ -394,9 +394,9 @@
   // #define  DEFAULT_Kd 55.11
 
   // FB GHOST stock values: 
-  #define  DEFAULT_Kp 15.35
-  #define  DEFAULT_Ki 1.16
-  #define  DEFAULT_Kd 150.60
+  // #define  DEFAULT_Kp 15.35
+  // #define  DEFAULT_Ki 1.16
+  // #define  DEFAULT_Kd 150.60
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
